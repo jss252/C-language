@@ -1,0 +1,21 @@
+#include<stdio.h>
+#include<conio.h>
+int main()
+{
+	int num1,num2;
+	int lcm(int num1,int num2);
+	printf("Enter first number:");
+	scanf("%d",&num1);
+	printf("Enter second number:");
+	scanf("%d",&num2);
+	printf("lcm= %d",lcm(num1,num2));
+}
+
+int lcm(int a,int b)
+{
+	static int m=0;
+	m=m+b;
+	if(m%a==0 && m%b==0)
+	return m;
+	return lcm(a,b);
+}
