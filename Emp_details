@@ -1,0 +1,24 @@
+#include<stdio.h>
+
+struct employee
+{
+	char name[50];
+	int age;
+	long int phone_no;
+	float salary;	
+}emp1,emp2;
+int main()
+{
+	printf("Name\t Age\tPhone_no\t salary\n");
+	struct employee emp1={"Shivam",24,98765357,8000};
+	printf("%s\t",emp1.name);
+	printf("%d\t",emp1.age);
+	printf("%ld\t",emp1.phone_no);
+	printf("%f\n",emp1.salary);
+	struct employee emp2={"Ram",25,98455557,9000};
+	printf("%s\t",emp2.name);
+	printf("%d\t",emp2.age);
+	printf("%ld\t",emp2.phone_no);
+	printf("%f\n",emp2.salary);
+}
+
